@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    
+    <!-- Primary SEO Metadata -->
+    <title>Contact Us — Nexora Creations | Best Digital Agency in Jaipur</title>
+    <meta name="description" content="Get in touch with Nexora Creations. Partner with the Best Website Development Company and Digital Agency in Jaipur. Visit our office in Malviya Nagar, Jaipur.">
+    <meta name="keywords" content="Best Digital Agency in Jaipur, Website Designer in Malviya Nagar Jaipur, Best Web Developer in Jaipur, Custom Website Development">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.nexoracreations.com/contact.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nexoracreations.com/contact.html">
+    <meta property="og:title" content="Contact Us — Nexora Creations | Best Digital Agency in Jaipur">
+    <meta property="og:description" content="Reach out to Jaipur's leading digital design agency. Let's build custom web experiences together.">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Library Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Noise overlay -->
+    <div class="bg-noise"></div>
+
+    <!-- Custom Animated Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <img src="logo.png" alt="Nexora Creations Logo" class="nav-logo">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="openModal()">Get Quote</button>
+                <button class="nav-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="mobile-bottom-nav">
+        <a href="index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="services.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>Services</span>
+        </a>
+        <a href="portfolio.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Work</span>
+        </a>
+        <button onclick="openModal()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Quote</span>
+        </button>
+    </div>
+
+    <main>
+        <!-- Contact Header -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="section-tag hero-tag" style="opacity: 1; transform: none;">Get in Touch</div>
+                <h1 class="hero-title" style="margin-bottom: 20px;">
+                    <span class="line" style="overflow: visible;"><span class="word" style="opacity: 1; transform: none;">LET'S BUILD</span></span>
+                    <span class="line" style="overflow: visible;"><span class="word highlight" style="opacity: 1; transform: none;">SOMETHING</span> <span class="word" style="opacity: 1; transform: none;">GREAT</span></span>
+                </h1>
+                <p class="lead">Ready to scale your web presence? Reach out to Nexora Creations. Our digital and design teams are ready to audit your brand goals.</p>
+            </div>
+        </section>
+
+        <!-- Main Contact Grid -->
+        <section class="contact-main">
+            <div class="container">
+                <div class="grid-2" style="align-items: start; gap: 60px; margin-bottom: 80px;">
+                    
+                    <!-- Left: Contact Form -->
+                    <div class="contact-form-wrap gs-reveal">
+                        <h2 style="font-size: 2.2rem; margin-bottom: 8px; font-weight: 800;">Send Us a Message</h2>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 30px;">Fill out our project inquiry sheet below and we'll reply within 24 business hours.</p>
+                        
+                        <!-- Success Banner (handled via main.js AJAX post) -->
+                        <div id="contactSuccessMsg" style="display: none; background-color: rgba(37, 99, 235, 0.05); border: 1px solid var(--color-primary); padding: 30px; border-radius: 8px; text-align: center;">
+                            <div class="success-check" style="margin-bottom: 15px;">✓</div>
+                            <h4 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 8px;">Submission Received!</h4>
+                            <p style="color: var(--color-text-secondary); line-height: 1.5;">Thank you for contacting us. One of our digital architects will review your requirements and reach out shortly.</p>
+                        </div>
+
+                        <form id="contactPageForm" action="https://formspree.io/f/xjglbkdb" method="POST">
+                            <input type="hidden" name="_subject" value="Nexora Contact Page Inquiry">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            
+                            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                                <div class="form-group">
+                                    <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Your Name</label>
+                                    <input type="text" name="name" placeholder="John Doe" required class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Email Address</label>
+                                    <input type="email" name="email" placeholder="john@example.com" required class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                                <div class="form-group">
+                                    <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Phone Number</label>
+                                    <input type="tel" name="phone" placeholder="+91 99999 99999" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Service Needed</label>
+                                    <select name="service" class="form-control" style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 12px top 50%; background-size: 10px auto;">
+                                        <option value="web-dev">Web Development</option>
+                                        <option value="ui-ux">UI/UX Design</option>
+                                        <option value="ecommerce">E-Commerce</option>
+                                        <option value="seo">SEO & Marketing</option>
+                                        <option value="other">Other Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 25px;">
+                                <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Project Details</label>
+                                <textarea name="message" placeholder="Describe your brand requirements..." required class="form-control" rows="5"></textarea>
+                            </div>
+
+                            <!-- Honeypot -->
+                            <input type="text" name="_honey" style="display:none">
+                            <button type="submit" class="btn btn-primary" style="width: 100%; cursor: none;">Submit Requirements</button>
+                        </form>
+                    </div>
+
+                    <!-- Right: Info Panel & Google Map -->
+                    <div class="contact-info-wrap gs-reveal" style="display: flex; flex-direction: column; gap: 40px;">
+                        <div>
+                            <h2 style="font-size: 2.2rem; margin-bottom: 8px; font-weight: 800;">Contact Details</h2>
+                            <p style="color: var(--color-text-secondary); margin-bottom: 30px;">Feel free to reach out via phone, email, or stop by our design office in Malviya Nagar, Jaipur.</p>
+                            
+                            <div class="footer-contact-info" style="display: flex; flex-direction: column; gap: 20px; font-size: 1.05rem;">
+                                <div class="footer-contact-item" style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="background-color: rgba(37, 99, 235, 0.05); padding: 12px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-border-light);">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="var(--color-primary)" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    </div>
+                                    <a href="mailto:hello@nexoracreations.com" style="color: var(--color-text-primary); text-decoration: none; font-weight: 500;">hello@nexoracreations.com</a>
+                                </div>
+                                <div class="footer-contact-item" style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="background-color: rgba(37, 99, 235, 0.05); padding: 12px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-border-light);">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="var(--color-primary)" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    </div>
+                                    <a href="tel:+919119164836" style="color: var(--color-text-primary); text-decoration: none; font-weight: 500;">+91 9119164836</a>
+                                </div>
+                                <div class="footer-contact-item" style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="background-color: rgba(37, 99, 235, 0.05); padding: 12px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--color-border-light);">
+                                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="var(--color-primary)" stroke-width="2" fill="none"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    </div>
+                                    <span style="color: var(--color-text-primary); font-weight: 500;">Malviya Nagar, Jaipur, Rajasthan 302017</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps Iframe -->
+                        <div class="contact-map-frame" style="border: 1px solid var(--color-border-light); border-radius: 8px; overflow: hidden; height: 280px;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14238.163351980838!2d75.80470215!3d26.8530403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db60a827447d9%3A0xa196ef2cf847d9!2sMalviya%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302017!5e0!3m2!1sen!2sin!4v1716892548231!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion FAQs section -->
+                <div class="faq-wrap" style="border-top: 1px solid var(--color-border-light); padding-top: 60px;">
+                    <div class="section-title-wrap text-center">
+                        <div class="section-tag gs-reveal">Frequent Objections</div>
+                        <h2 class="section-title gs-reveal">Common <span>Questions</span></h2>
+                    </div>
+
+                    <div class="faq-list" style="max-width: 800px; margin: 0 auto 60px;">
+                        
+                        <!-- FAQ 1 -->
+                        <div class="faq-item active gs-reveal">
+                            <div class="faq-question">
+                                <h4>What is your typical project delivery timeline?</h4>
+                                <span class="faq-toggle-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Typical corporate website redesign timelines run between 4 to 8 weeks depending on the complexity of design iterations, number of pages, and technical database configurations. Full custom e-commerce applications generally take 8 to 12 weeks from discovery to deployment.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item gs-reveal">
+                            <div class="faq-question">
+                                <h4>Do you provide SEO Audits for existing domains?</h4>
+                                <span class="faq-toggle-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we perform complete SEO Domain Audits checking search visibility, key terms mappings, link profiles, and crawler bottlenecks. This audit is completely free for prospective corporate partners planning full site overhauls.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item gs-reveal">
+                            <div class="faq-question">
+                                <h4>What payment milestones do you offer?</h4>
+                                <span class="faq-toggle-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We split project costs across four milestones: 25% on agreement and wireframing launch, 25% on design layout completion approvals, 25% on development environment build review, and 25% upon testing audits and domain launch.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item gs-reveal">
+                            <div class="faq-question">
+                                <h4>Can we edit page text and articles internally?</h4>
+                                <span class="faq-toggle-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely. We build modular, custom CMS structures (like Webflow, Headless CMS, or Custom Dashboards) enabling team members to create blog posts, add portfolio case studies, and change page text easily without writing code.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Nexora Creations Logo" class="footer-logo">
+                    <p>Premium web development and digital design studio. Elevating brands with tailored Web applications and SEO strategies.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/nexoracreationss" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="https://wa.me/919119164836" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">E-Commerce</a></li>
+                        <li><a href="services.html">Mobile Applications</a></li>
+                        <li><a href="services.html">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Agency</a></li>
+                        <li><a href="portfolio.html">Case Studies</a></li>
+                        <li><a href="blog.html">SEO Blog</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <a href="mailto:hello@nexoracreations.com">hello@nexoracreations.com</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <a href="tel:+919119164836">+91 9119164836</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Malviya Nagar, Jaipur, Rajasthan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Nexora Creations. All rights reserved.</div>
+                <div>Designed with digital excellence.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal Overlay -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modalFormContainer">
+                <h3 style="font-size: 2rem; margin-bottom: 8px; font-weight: 800;">Let's Build Something.</h3>
+                <p style="color: var(--color-text-muted); margin-bottom: 24px; font-size: 0.95rem;">Fill out the details below and we will contact you within 24 hours.</p>
+                
+                <form id="projectForm" action="https://formspree.io/f/xjglbkdb" method="POST">
+                    <input type="hidden" name="_subject" value="Nexora Contact Modal Inquiry">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="form-group" style="margin-bottom: 16px;">
+                        <input type="text" name="name" placeholder="Your Name" required class="form-control">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 16px;">
+                        <input type="email" name="email" placeholder="Your Email Address" required class="form-control">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 16px;">
+                        <input type="tel" name="phone" placeholder="Your Phone Number" class="form-control">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <textarea name="requirements" placeholder="Tell us about your project requirements..." required class="form-control" rows="4"></textarea>
+                    </div>
+                    
+                    <input type="text" name="_honey" style="display:none">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; cursor: none;">Submit Details</button>
+                </form>
+            </div>
+
+            <div id="modalSuccess" style="display: none; text-align: center; padding: 20px 0;">
+                <div class="success-check">✓</div>
+                <h3 style="font-size: 2.2rem; margin-bottom: 12px; font-weight: 800;">Thank You!</h3>
+                <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.6;">Your project details have been received successfully. Our team will contact you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Socials -->
+    <div class="floating-socials">
+        <a href="https://wa.me/919119164836" class="float-btn float-whatsapp" target="_blank" title="WhatsApp Us" aria-label="WhatsApp Contact">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/nexoracreationss" class="float-btn float-instagram" target="_blank" title="Instagram" aria-label="Instagram Social Link">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Main scripts -->
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

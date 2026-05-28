@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis lenis-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    
+    <!-- Primary SEO Metadata -->
+    <title>Portfolio & Case Studies — Nexora Creations | Web Design Portfolio</title>
+    <meta name="description" content="Explore our premium case studies. See how the Best Website Development Company and Digital Agency in Jaipur delivers UI/UX design, custom websites, and e-commerce solutions.">
+    <meta name="keywords" content="Best Web Developer in Jaipur, Website Designer in Malviya Nagar Jaipur, Custom Website Development, UI UX Design Agency">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.nexoracreations.com/portfolio.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nexoracreations.com/portfolio.html">
+    <meta property="og:title" content="Portfolio & Case Studies — Nexora Creations | Web Design Portfolio">
+    <meta property="og:description" content="View selected case studies of high-performance custom website developments and e-commerce overhauls.">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Library Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background Noise overlay -->
+    <div class="bg-noise"></div>
+
+    <!-- Custom Animated Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <img src="logo.png" alt="Nexora Creations Logo" class="nav-logo">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="openModal()">Get Quote</button>
+                <button class="nav-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="mobile-bottom-nav">
+        <a href="index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="services.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>Services</span>
+        </a>
+        <a href="portfolio.html" class="active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Work</span>
+        </a>
+        <button onclick="openModal()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Quote</span>
+        </button>
+    </div>
+
+    <main>
+        <!-- Portfolio Header -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="section-tag hero-tag" style="opacity: 1; transform: none;">Case Studies</div>
+                <h1 class="hero-title" style="margin-bottom: 20px;">
+                    <span class="line" style="overflow: visible;"><span class="word" style="opacity: 1; transform: none;">SELECTED</span></span>
+                    <span class="line" style="overflow: visible;"><span class="word highlight" style="opacity: 1; transform: none;">CASE</span> <span class="word" style="opacity: 1; transform: none;">STUDIES</span></span>
+                </h1>
+                <p class="lead">Explore how we help global brands and local leaders in Jaipur construct premium web environments, boost loading velocities, and optimize lead conversions.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Listing with Filter system -->
+        <section class="portfolio-main">
+            <div class="container">
+                
+                <!-- Filter Buttons -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                </div>
+
+                <!-- Projects grid -->
+                <div class="portfolio-grid" id="portfolioGrid" style="margin-bottom: 60px;">
+                                     <!-- Card 1 (Web Development) -->
+                    <div class="portfolio-item-wrap" data-category="web">
+                        <a href="portfolio/mmdc-dental-clinic.html" class="portfolio-card" style="opacity: 1; transform: none;">
+                            <div class="portfolio-mockup-frame">
+                                <div class="mockup-header">
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <div class="mockup-address-bar">nexoracreations.com/mmdc-clinic</div>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="MMDC UAE Dental Clinic Platform Case Study" class="portfolio-img-cover">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-tags">
+                                            <span class="portfolio-tag-item">React / NextJS</span>
+                                            <span class="portfolio-tag-item">TailwindCSS</span>
+                                            <span class="portfolio-tag-item">Analytics</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-details">
+                                <div class="portfolio-cat-badge">HEALTHCARE PLATFORM</div>
+                                <h3 class="portfolio-card-title-new">MMDC UAE Dental Clinic</h3>
+                                <div class="project-outcome-metric">
+                                    <span class="metric-badge"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none"><path d="M23 6l-9.5 9.5-5-5L1 18"></path><polyline points="17 6 23 6 23 12"></polyline></svg> +110% Inquiries</span>
+                                    <span class="metric-badge"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> 96 PageSpeed</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-summary-footer-new">
+                            <p>Increased patient booking inquiries by 110% within 60 days of launch, with mobile PageSpeed score hitting 96%.</p>
+                            <a href="portfolio/mmdc-dental-clinic.html" class="portfolio-cta-btn">Read Case Study <span class="cta-arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 (UI/UX Design) -->
+                    <div class="portfolio-item-wrap" data-category="design">
+                        <a href="portfolio/best-dentist-clinic.html" class="portfolio-card" style="opacity: 1; transform: none;">
+                            <div class="portfolio-mockup-frame">
+                                <div class="mockup-header">
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <div class="mockup-address-bar">bestdentistclinic.in</div>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Best Dentist Clinic Landing Page Case Study" class="portfolio-img-cover">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-tags">
+                                            <span class="portfolio-tag-item">Figma Design</span>
+                                            <span class="portfolio-tag-item">Webflow</span>
+                                            <span class="portfolio-tag-item">SEO Target</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-details">
+                                <div class="portfolio-cat-badge">HEALTHCARE DESIGN</div>
+                                <h3 class="portfolio-card-title-new">Best Dentist Clinic</h3>
+                                <div class="project-outcome-metric">
+                                    <span class="metric-badge"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none"><path d="M23 6l-9.5 9.5-5-5L1 18"></path><polyline points="17 6 23 6 23 12"></polyline></svg> -45% Bounce Rate</span>
+                                    <span class="metric-badge"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg> Page 1 Google</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-summary-footer-new">
+                            <p>Redesigned visual conversion paths, resulting in a 45% reduction in bounce rate and top organic local ranks in Jaipur.</p>
+                            <a href="portfolio/best-dentist-clinic.html" class="portfolio-cta-btn">Read Case Study <span class="cta-arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 (E-Commerce) -->
+                    <div class="portfolio-item-wrap" data-category="ecommerce">
+                        <a href="portfolio/solanki-chains-ecommerce.html" class="portfolio-card" style="opacity: 1; transform: none;">
+                            <div class="portfolio-mockup-frame">
+                                <div class="mockup-header">
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <div class="mockup-address-bar">solankichains.com</div>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80" alt="Solanki Chains Jewelry E-Commerce Case Study" class="portfolio-img-cover">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-tags">
+                                            <span class="portfolio-tag-item">ReactJS Node</span>
+                                            <span class="portfolio-tag-item">MongoDB</span>
+                                            <span class="portfolio-tag-item">Stripe API</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-details">
+                                <div class="portfolio-cat-badge">E-COMMERCE SYSTEM</div>
+                                <h3 class="portfolio-card-title-new">Solanki Chains</h3>
+                                <div class="project-outcome-metric">
+                                    <span class="metric-badge"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none"><path d="M23 6l-9.5 9.5-5-5L1 18"></path><polyline points="17 6 23 6 23 12"></polyline></svg> +25% AOV Boost</span>
+                                    <span class="metric-badge"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> PCI Compliant</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-summary-footer-new">
+                            <p>Boosted average order value (AOV) by 25% and simplified merchant inventories tracking via custom secure APIs.</p>
+                            <a href="portfolio/solanki-chains-ecommerce.html" class="portfolio-cta-btn">Read Case Study <span class="cta-arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 (Web Development) -->
+                    <div class="portfolio-item-wrap" data-category="web">
+                        <a href="portfolio/harvin-rubtech-corporate.html" class="portfolio-card" style="opacity: 1; transform: none;">
+                            <div class="portfolio-mockup-frame">
+                                <div class="mockup-header">
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <span class="mockup-dot"></span>
+                                    <div class="mockup-address-bar">harvinrubtech.com</div>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Harvin Rubtech Corporate Website Case Study" class="portfolio-img-cover">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-tags">
+                                            <span class="portfolio-tag-item">HTML5 / SCSS</span>
+                                            <span class="portfolio-tag-item">GSAP Animations</span>
+                                            <span class="portfolio-tag-item">Core Web Vitals</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-card-details">
+                                <div class="portfolio-cat-badge">CORPORATE PORTAL</div>
+                                <h3 class="portfolio-card-title-new">Harvin Rubtech</h3>
+                                <div class="project-outcome-metric">
+                                    <span class="metric-badge"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> 0.7s Load Speed</span>
+                                    <span class="metric-badge"><svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 100% CWV Core</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-summary-footer-new">
+                            <p>Achieved a 100% Mobile Core Web Vitals pass rate, decreasing load speed to 0.7 seconds with clean compiled code.</p>
+                            <a href="portfolio/harvin-rubtech-corporate.html" class="portfolio-cta-btn">Read Case Study <span class="cta-arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title gs-reveal">Have a Website Idea to Launch?</h2>
+                <p class="cta-desc gs-reveal">We deliver custom website developments configured to scale. Partner with Jaipur's Best Digital Agency today.</p>
+                <button class="btn btn-dark gs-reveal" onclick="openModal()">Request Project Estimate</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Nexora Creations Logo" class="footer-logo">
+                    <p>Premium web development and digital design studio. Elevating brands with tailored Web applications and SEO strategies.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/nexoracreationss" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="https://wa.me/919119164836" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">E-Commerce</a></li>
+                        <li><a href="services.html">Mobile Applications</a></li>
+                        <li><a href="services.html">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Agency</a></li>
+                        <li><a href="portfolio.html">Case Studies</a></li>
+                        <li><a href="blog.html">SEO Blog</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <a href="mailto:hello@nexoracreations.com">hello@nexoracreations.com</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <a href="tel:+919119164836">+91 9119164836</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Malviya Nagar, Jaipur, Rajasthan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Nexora Creations. All rights reserved.</div>
+                <div>Designed with digital excellence.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal Overlay -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modalFormContainer">
+                <h3 style="font-size: 2rem; margin-bottom: 8px; font-weight: 800;">Let's Build Something.</h3>
+                <p style="color: var(--color-text-muted); margin-bottom: 24px; font-size: 0.95rem;">Fill out the details below and we will contact you within 24 hours.</p>
+                
+                <form id="projectForm" action="https://formspree.io/f/xjglbkdb" method="POST">
+                    <input type="hidden" name="_subject" value="Nexora Portfolio Inquiry">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="form-group" style="margin-bottom: 16px;">
+                        <input type="text" name="name" placeholder="Your Name" required class="form-control">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 16px;">
+                        <input type="email" name="email" placeholder="Your Email Address" required class="form-control">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 16px;">
+                        <input type="tel" name="phone" placeholder="Your Phone Number" class="form-control">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <textarea name="requirements" placeholder="Tell us about your project requirements..." required class="form-control" rows="4"></textarea>
+                    </div>
+                    
+                    <input type="text" name="_honey" style="display:none">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; cursor: none;">Submit Details</button>
+                </form>
+            </div>
+
+            <div id="modalSuccess" style="display: none; text-align: center; padding: 20px 0;">
+                <div class="success-check">✓</div>
+                <h3 style="font-size: 2.2rem; margin-bottom: 12px; font-weight: 800;">Thank You!</h3>
+                <p style="color: var(--color-text-secondary); font-size: 1.05rem; line-height: 1.6;">Your project details have been received successfully. Our team will contact you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Socials -->
+    <div class="floating-socials">
+        <a href="https://wa.me/919119164836" class="float-btn float-whatsapp" target="_blank" title="WhatsApp Us" aria-label="WhatsApp Contact">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/nexoracreationss" class="float-btn float-instagram" target="_blank" title="Instagram" aria-label="Instagram Social Link">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Main scripts -->
+    <script src="js/main.js" defer></script>
+
+    <!-- Custom Portfolio Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.portfolio-item-wrap');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button state
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const category = btn.getAttribute('data-filter');
+
+                    // Filter logic
+                    projectItems.forEach(item => {
+                        const itemCat = item.getAttribute('data-category');
+                        if (category === 'all' || itemCat === category) {
+                            item.style.display = 'block';
+                            // Trigger refresh cursor so newer elements get the hover callbacks
+                            if (window.refreshCursorHovers) window.refreshCursorHovers();
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

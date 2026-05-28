@@ -1,0 +1,11 @@
+/**
+ * Nexora Creations - Legacy Stylesheet
+ * 
+ * NOTICE: This stylesheet is deprecated. The styles have been refactored
+ * into a unified design system architecture under:
+ * 
+ * - css/style.css
+ * 
+ * Please reference that file in your page header stylesheets links.
+ */
+@import url('css/style.css');
